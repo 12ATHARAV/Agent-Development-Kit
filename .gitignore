@@ -1,0 +1,163 @@
+# ==========================================
+# Python
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage / linting
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ty/
+.pyre/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# Poetry
+poetry.lock
+
+# Pipenv
+Pipfile.lock
+
+# environments
+.env
+.env.*
+!.env.example
+.venv
+.venv*
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# ==========================================
+# Node.js
+# ==========================================
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+# JetBrains (PyCharm, WebStorm, etc.)
+.idea/
+
+# Eclipse
+.project
+.metadata/
+.classpath
+.settings/
+*.launch
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# ==========================================
+# System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Terraform
+# ==========================================
+.terraform/
+.terraform*
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.tfvars.json
+
+# ==========================================
+# Agent Development Kit (ADK) & CLI
+# ==========================================
+.adk/
+.saved_chats/
+.google-agents-cli/
+.persist_vector_store/
+.locust_env
+my_env.tfvars
+.requirements.txt
+tests/load_test/.results/*.html
+tests/load_test/.results/*.csv
+tools/a2a-inspector/
+
+# Logs
+*.log
+logs/
+tmp/
+temp/
