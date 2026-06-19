@@ -71,11 +71,28 @@ Ensure you have the following installed on your machine:
 ## 💻 Development & Testing
 
 ### Running the Web Playground
-To run the agent locally in an interactive chat interface:
+To run the agent locally in an interactive chat interface without CORS/origin issues ("Failed to create session" error):
+
+Using the helper scripts:
+* **Windows (PowerShell)**:
+  ```powershell
+  ./run_web.ps1
+  ```
+* **Linux/macOS**:
+  ```bash
+  chmod +x run_web.sh
+  ./run_web.sh
+  ```
+
+Or manually running the command:
 ```bash
-uv run adk web --host 127.0.0.1 --port 8085 --reload_agents
+uv run adk web --host 127.0.0.1 --port 8085 --reload_agents --allow_origins "regex:.*"
 ```
+
 Open **[http://127.0.0.1:8085/dev-ui/?app=app](http://127.0.0.1:8085/dev-ui/?app=app)** in your browser to start chatting with the agent.
+
+> [!NOTE]
+> The `--allow_origins "regex:.*"` configuration is required because browsers enforce Origin policies on non-safe HTTP requests (like POST requests to create sessions) when accessing the UI via `localhost` vs `127.0.0.1`. Using a regex pattern ensures all local development origins are correctly allowed.
 
 ### Running Automated Tests
 Run the test suite using `pytest`:
